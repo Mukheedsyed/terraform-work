@@ -39,3 +39,9 @@ variable "private-subnet-4-cidr" {
   description = "private subnet 4 CIDR Block"
   type = string
 }
+
+variable "ssh-location" {
+  default = "0.0.0.0/0"
+  description = "IP Address that can SSH in to EC2 Intance"
+  type = string
+}
